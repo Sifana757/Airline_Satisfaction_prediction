@@ -20,8 +20,8 @@ st.set_page_config(
 @st.cache_resource
 def load_models():
     try:
-        model = pickle.load(open('model (1).pkl', 'rb'))
-        scaler = pickle.load(open('scaler (1).pkl', 'rb'))
+        model = pickle.load(open('model.pkl', 'rb'))
+        scaler = pickle.load(open('scaler.pkl', 'rb'))
         encoder = pickle.load(open('label_encoder.pkl', 'rb'))
         return model, scaler, encoder
     except:
