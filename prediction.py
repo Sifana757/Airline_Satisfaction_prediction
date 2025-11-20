@@ -17,7 +17,7 @@ st.set_page_config(
 
 
 # Load models
-]model = pickle.load(open('model.pkl', 'rb'))
+model = pickle.load(open('model.pkl', 'rb'))
 scaler = pickle.load(open('scaler.pkl', 'rb'))
 encoder = pickle.load(open('label_encoder.pkl', 'rb'))
 
